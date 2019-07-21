@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package warg1;
+package warGame;
 
 import java.util.ArrayList;
 

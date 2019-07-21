@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package warg1;
+package warGame;
 
 /**
  * A class to be used as the base Card class for the project. Must be general
