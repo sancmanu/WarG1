@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package warGame;
+package ca.sheridancollege.project;
 
 import java.util.ArrayList;
 import java.util.Collections;
