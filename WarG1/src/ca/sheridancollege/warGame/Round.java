@@ -1,12 +1,16 @@
 package ca.sheridancollege.warGame;
 import ca.sheridancollege.project.Player;
+import java.util.ArrayList;
 
 public class Round
 {
 
    private boolean isRoundStart;
-   private Player firstPlayer;
-   private Player secondPlayer;
+   private ArrayList<WarPlayer> players;// the players of the game
+   private WarGame attribute;
+   /**
+    * the players of the game
+    */
    private War war;
 
    public Round ()
@@ -53,6 +57,64 @@ public class Round
    {
       // TODO - implement Round.addCardsToCardDeck
       throw new UnsupportedOperationException();
+   }
+
+   /**
+    * @return the isRoundStart
+    */
+   public boolean isIsRoundStart ()
+   {
+      return isRoundStart;
+   }
+
+   /**
+    * @param isRoundStart the isRoundStart to set
+    */
+   public void setIsRoundStart (boolean isRoundStart)
+   {
+      this.isRoundStart = isRoundStart;
+   }
+
+   /**
+    * @return the players
+    */
+   public ArrayList<WarPlayer> getPlayers ()
+   {
+      return players;
+   }
+
+   /**
+    * @param players the players to set
+    */
+   public void setPlayers (ArrayList<WarPlayer> players)
+   {
+      this.players = players;
+   }
+
+   /**
+    * @return the war
+    */
+   public WarGame getAttribute ()
+   {
+      return attribute;
+   }
+
+   /**
+    * @param war the war to set
+    */
+   public void setAttribute (WarGame war)
+   {
+      this.attribute = war;
+   }
+
+   public War getWar ()
+   {
+      return this.war;
+   }
+
+   public void setWar (War war)
+   {
+      this.war = war;
    }
 
 }
