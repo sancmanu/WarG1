@@ -4,17 +4,16 @@ import ca.sheridancollege.project.Card;
 public class PokerCard extends Card
 {
    private Suits suite;
-   private CardValue value;
-
-   public void setSuite (Suits suite)
-   {
-      this.suite = suite;
-   }
+   private CardValue cardValue;
 
    public PokerCard ()
    {
-      // TODO - implement PokerCard.PokerCard
-      throw new UnsupportedOperationException();
+   }
+
+   public PokerCard (Suits suite, CardValue cardValue)
+   {
+      this.suite = suite;
+      this.cardValue = cardValue;
    }
 
    @Override
