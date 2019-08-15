@@ -8,8 +8,25 @@ public class WarPlayer extends Player
    public WarPlayer (String name)
    {
       super(name);
-      this.warDeckCards = new WarDeckCards(26);
    }
+
+   public WarPlayer (String name, WarDeckCards warDeckCards)
+   {
+      super(name);
+      this.warDeckCards = warDeckCards;
+   }
+
+
+   public WarDeckCards getWarDeckCards ()
+   {
+      return warDeckCards;
+   }
+
+   public void setWarDeckCards (WarDeckCards warDeckCards)
+   {
+      this.warDeckCards = warDeckCards;
+   }
+
 
    @Override
    public void play ()
