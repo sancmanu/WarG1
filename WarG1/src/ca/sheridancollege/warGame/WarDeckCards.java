@@ -1,23 +1,34 @@
 package ca.sheridancollege.warGame;
-import ca.sheridancollege.project.GroupOfCards;
+
+import ca.sheridancollege.project.*;
+
 /**
  * @author Manuel Sanchez Moyano - Student ID 991545555
  */
 public class WarDeckCards extends GroupOfCards
 {
+
+   /**
+    *
+    * @param givenSize
+    */
    public WarDeckCards (int givenSize)
    {
       super(givenSize);
-      createCardDeck();
+
    }
 
-   private void createCardDeck ()
+   public void createCardDeck ()
    {
-      int totalCards = getSize();
-      for (int card = 0; card <= totalCards; card++) {
-         for (int suite = 0; suite <= 4; suite++) {
-
+      PokerCard pokerCard = new PokerCard();
+      for (int i = 0; i < pokerCard.getSuit().values().length; i++) {
+         for (int j = 0; j < pokerCard.getValue().values().length; j++) {
+            pokerCard.setSuit(pokerCard.getSuit().values()[i]);
+            pokerCard.setValue(pokerCard.getValue().values()[j]);
+            this.getCards().add(pokerCard);
+            System.out.println(pokerCard.toString());
          }
       }
+
    }
 }
